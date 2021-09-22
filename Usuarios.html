@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang=es>
     <head>
-        <title>Usuarios</title>
-	    <style>
+		<meta charset="UTF-8">
+      	<title>Usuarios</title>
+		<style>
 			.submit {
 				background-color: #a5a5a5;
 				padding: .5em;
@@ -59,45 +60,50 @@
 				background-color: grey;
 				color: black;
 			}
-		</style>
-    </head>	
-    <body>
-		<form action = "CreaUsuario.jsp" method = "POST">
-			<div class="header">
-				<p> Tienda Genérica</p>
-			</div>
-			<div class="topnav">
-				<a class="active" href="Usuarios.html">Usuarios</a>
-				<a href="Clientes.html">Clientes</a>
-				<a href="Proveedores.html">Proveedores</a>
-				<a href="Productos.html">Productos</a>
-				<a href="Ventas.html">Ventas</a>
-				<a href="Reportes.html">Reportes</a>
-			</div>
-			</br>
-			<table  style="margin-top:10px; margin-left:50px;" border = "0"  align = "left" cellspacing = "5" cellpadding = "5">
-				<tr>
-					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Cedula</font></td>
-					<td><input type="text" name="cedula" /></td>
-					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Usuario</font></td>
-					<td><input type="text" name="usuario"/></td>
-				</tr>      
-				<tr>
-					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Nombre Completo</font></td>
-					<td><input type="text" name="nombre"  /></td>
-					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Contraseña</font></td>
-					<td><input type="text" name="contrasena"/></td>
-				</tr>  
-				<tr>
-					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Correo Electronico</font></td>
-					<td><input type="text" name="correo"/></td>
-				</tr>         
-			</table>  
-			</br></br></br></br></br></br></br>
-			<p style="text-align:left;"><button class="submit" type="submit">Consultar</button> 
-			<button class="submit" type="submit">Crear</button>
-			<button class="submit" type="submit">Actualizar</button>
-			<button class="submit" type="submit">Borrar</button></p>
-		</form>
+			
+	</style>
+	</head>	
+	<body>
+		<div class="header">
+			<p> Tienda Genérica - Usuarios</p>
+		</div>
+		<div class="topnav">
+			<a class="active" href="Usuarios.html">Usuarios</a>
+			<a href="Clientes.html">Clientes</a>
+			<a href="Proveedores.html">Proveedores</a>
+			<a href="Productos.html">Productos</a>
+			<a href="Ventas.html">Ventas</a>
+			<a href="Reportes.html">Reportes</a>
+		</div>
+		</br>
+		</br>
+		<div>
+			<form method = "POST" accion="ClienteController">
+				<table  style="margin-top:10px; margin-left:50px;" border = "0"  align = "left" cellspacing = "5" cellpadding = "5">
+					<tr>
+						<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Cedula</font></td>
+						<td><input type="text" name="cedula" /></td>
+						<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Usuario</font></td>
+						<td><input type="text" name="usuario"/></td>
+					</tr>      
+					<tr>
+						<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Nombre Completo</font></td>
+						<td><input type="text" name="nombre"  /></td>
+						<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Contraseña</font></td>
+						<td><input type="text" name="contrasena"/></td>
+					</tr>  
+					<tr>
+						<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Correo Electronico</font></td>
+						<td><input type="text" name="correo"/></td>
+					</tr>         
+				</table>
+			</form>  
+	       </br></br></br></br></br></br></br>
+	       <p style="text-align:left;">
+	       <button class="submit" type= "submit" name="accion" value="Consultar" formaction="ConsultarUsuario.jsp" >Consultar</button>  
+	       <button class="submit" type= "submit" name="accion" value="Crear" formaction="CreaUsuario.jsp" >Crear</button>
+	       <button class="submit" type= "submit" name="accion" value="Actualizar" formaction="ModificaUsuario.jsp">Actualizar</button>
+	       <button class="submit" type= "submit" name="accion" value="Eliminar" formaction="EliminaUsuario.jsp">Borrar</button></p>
+   		</div>
    </body>	
 </html>

@@ -2,90 +2,50 @@ package com.DTO.TiendaVirtualSB;
 
 public class ClienteVO {
 
-    private Integer cedulaUsuario;
-    private String nombreUsuario;
-    private String correoUsuario;
-    private String usuarioUsuario;
-    private String contrasenaUsuario;
     private Integer cedulaCliente;
+    private String direccionCliente;
+    private String emailCliente;
     private String nombreCliente;
-    private String correoCliente;
-    private String usuarioCliente;
-    private String contrasenaCliente;
-
+    private Integer telefonoCliente;
 
     public ClienteVO(){};
 
-    public ClienteVO(Integer cedulaUsuario, String nombreUsuario, String correoUsuario, String usuarioUsuario, String contrasenaUsuario, Integer cedulaCliente, String nombreCliente, String correoCliente, String usuarioCliente, String contrasenaCliente){
-        this.cedulaUsuario=cedulaUsuario;
-        this.nombreUsuario=nombreUsuario;
-        this.correoUsuario=correoUsuario;
-        this.usuarioUsuario=usuarioUsuario;
-        this.contrasenaUsuario=contrasenaUsuario;
+    public ClienteVO(Integer cedulaCliente, String direccionCliente, String emailCliente, String nombreCliente, Integer telefonoCliente){
         this.cedulaCliente=cedulaCliente;
+        this.direccionCliente=direccionCliente;
+        this.emailCliente=emailCliente;
         this.nombreCliente=nombreCliente;
-        this.correoCliente=correoCliente;
-        this.usuarioCliente=usuarioCliente;
-        this.contrasenaCliente=contrasenaCliente;
+        this.telefonoCliente=telefonoCliente;
     };
-    public Integer getCedulaUsuario() {
-        return cedulaUsuario;
-    }
-    public void setCedulaUsuario(Integer cedulaUsuario) {
-        this.cedulaUsuario = cedulaUsuario;
-    }
-    public String getNombreUsuario() {
-        return nombreUsuario;
-    }
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
-    }
-    public String getCorreoUsuario(){
-        return correoUsuario;
-    }
-    public void setCorreoUsuario(String correoUsuario) {
-        this.correoUsuario = correoUsuario;
-    }
-    public String getUsuarioUsuario() {
-        return usuarioUsuario;
-    }
-    public void setUsuarioUsuario(String usuarioUsuario) {
-        this.usuarioUsuario = usuarioUsuario;
-    }
-    public String getContrasenaUsuario() {
-        return contrasenaUsuario;
-    }
-    public void setContrasenaUsuario(String contrasenaUsuario) {
-        this.contrasenaUsuario = contrasenaUsuario;
-    }
-    public Integer getCedulaCliente() {
-        return cedulaCliente;
-    }
-    public void setCedulaCliente(Integer cedulaCliente) {
-        this.cedulaCliente = cedulaCliente;
-    }
-    public String getNombreCliente() {
-        return nombreCliente;
-    }
-    public void setNombreCliente(String nombreCliente) {
-        this.nombreCliente = nombreCliente;
-    }
-    public String getCorreoCliente() {
-        return correoCliente;
-    }
-    public void setCorreoCliente(String correoCliente) {
-        this.correoCliente = correoCliente;
-    }
-    public String getUsuarioCliente() {
-        return usuarioCliente;
-    }
-    public void setUsuarioCliente(String usuarioCliente) {
-        this.usuarioCliente = usuarioCliente;
-    }
-    public String getContrasenaCliente() {
-        return contrasenaCliente;
-    }
-    public void setContrasenaCliente(String contrasenaCliente) {
-        this.contrasenaCliente = contrasenaCliente;
-    }	 
+
+	public Integer getCedulaCliente() {
+		return cedulaCliente;
+	}
+	public void setCedulaCliente(Integer cedulaCliente) {
+		this.cedulaCliente = cedulaCliente;
+	}
+	public String getDireccionCliente() {
+		return direccionCliente;
+	}
+	public void setDireccionCliente(String direccionCliente) {
+		this.direccionCliente = direccionCliente;
+	}
+	public String getEmailCliente() {
+		return emailCliente;
+	}
+	public void setEmailCliente(String emailCliente) {
+		this.emailCliente = emailCliente;
+	}
+	public String getNombreCliente() {
+		return nombreCliente;
+	}
+	public void setNombreCliente(String nombreCliente) {
+		this.nombreCliente = nombreCliente;
+	}
+	public Integer getTelefonoCliente() {
+		return telefonoCliente;
+	}
+	public void setTelefonoCliente(Integer telefonoCliente) {
+		this.telefonoCliente = telefonoCliente;
+	}    
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<title>Login Primera Vez</title>
+		<style>
+			.submit {
+				 background-color: #a5a5a5;
+				 padding: .5em;
+				 -moz-border-radius: 5px;
+				 -webkit-border-radius: 5px;
+				 border-radius: 6px;
+				 color: white;
+				 font-family: 'Tahoma';
+				 size: 2;
+				 text-decoration: none;
+				 border: none;
+				 text-align: center;
+				 margin: 15px;
+				 margin-top: 0.1px;
+				 position: relative;
+				 left: 300px; 
+			}
+			.submit:hover {
+				 border: none;
+				 background: salmon;
+				 box-shadow: 0px 0px 1px #777;
+			}
+			.header {
+				  padding: 0.1px;
+				  text-align: Left;
+				  background: #a5a5a5;
+				  color: white;
+				  font-size: 2;
+				  font-family: 'Tahoma';
+				  padding-left:10px; 
+				  height: 50px;
+			}			
+	</style>
+    </head>	
+    <body>
+ 		<div class="header">
+			<p> Tienda Genérica - Ingreso por Primera Vez</p>
+		</div>
+		</br>
+		<form method = "POST" accion="ClienteController">
+			<table  style="margin-top:10px; margin-left:50px;" border = "0"  align = "left" cellspacing = "5" cellpadding = "5">
+				<tr>
+					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Cedula</font></td>
+					<td><input type="text" name="cedula" /></td>
+					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Usuario</font></td>
+					<td><input type="text" name="usuario"/></td>
+				</tr>      
+				<tr>
+					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Nombre Completo</font></td>
+					<td><input type="text" name="nombre"  /></td>
+					<td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Contraseña</font></td>
+					<td><input type="password" name="contrasena"/></td>
+				</tr>  
+				<tr>
+				   <td style="text-align:left;"> <font face = "Tahoma" size = "2" color = "#bebaba">Correo Electronico</font></td>
+				   <td><input type="text" name="correo"/></td>
+				</tr>         
+			</table>  
+		</br></br></br></br></br></br></br>
+		<p style="text-align:left;">
+		<button class="submit" type= "submit" name="accion" value="Crear" formaction="CreaUsuario.jsp" >CREAR CUENTA</button>
+		</form>
+   </body>	
+</html>
